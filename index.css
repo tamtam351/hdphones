@@ -1,0 +1,428 @@
+#pre-loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: rgb(12, 63, 83) url("./preloader-photos/Animation\ -\ 1731002508571.webm") no-repeat center center;
+  }
+  #pre-loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #21242d
+      url("./preloader-photos/Animation\ -\ 1731002433650.webm")
+      no-repeat center;
+    z-index: 999;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+  }
+  #banner{
+    padding: 30px;
+    background:#fff;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+.bose{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 100px;
+}
+  #banner h1{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  #banner p{
+    font-size: 18px;
+  }
+
+  #banner button{
+    background-color: #21242d;
+    color: #fff;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    border:  1px solid #21242d;
+    transition: background-color .3s ease-in,color .3s ease-in;
+    
+    
+  }
+
+  #banner button:hover{
+    border: 1px solid #21242d;
+    color: #21242d;
+    cursor: pointer;
+    background-color: #a69a9a81;
+  }
+#bnnr nav{
+  margin-right: -30px !important;
+}
+  #bnnr nav ul{
+   
+
+    list-style: none;
+  }
+
+  #bnnr nav ul a{
+    
+    text-decoration: none;
+    color: #000;
+    position: relative;
+  }
+
+  #bnnr nav ul{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12%;
+    margin-left: 20px !important;
+  }
+  #bnnr nav ul a::after{
+
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    left: 50%;
+    top: 100%;
+    translate: -50% -50%;
+    border-radius: 1px;
+    content: "";
+   
+  }
+  #bnnr nav ul a:hover::after{
+    transform: scaleX(1);
+
+    
+  }
+
+  #bnnr img{
+    width: 700px;
+    height: 500px;
+    object-fit: contain;
+  }
+  .counter img{
+    width:13rem;
+    position: relative;
+    margin-left: -156px;
+    align-self: center;
+    justify-self: center;
+
+    object-fit: contain;
+  }
+  .counters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    margin-top: -100px !important;
+    z-index: 1;
+    position: absolute;
+    left: 20px;
+    right: 10px;
+  }
+  
+  .counter {
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: #282828;
+    
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    /* border: 2px solid lightblue; */
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .counter:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+  }
+  .counter:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+  }
+  .counter:not(:first-child)::after {
+    content: "";
+    width: 2px;
+    height: 100px;
+    top: 30%;
+    /* left: 0.0100%; */
+    left: -0.1% !important;
+    background-color: white;
+    position: absolute;
+  }
+  
+  .counter:hover {
+    background-color:#70656B ;
+  }
+  .counter span {
+    color: white;
+    font-size: 50px;
+  }
+  
+#cards{
+  
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  justify-content: space-around;
+}
+  .card img{
+    width: 500px;
+    height: 280px;
+     object-fit: cover; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card{
+    width: 500px;
+    text-align: center;
+    
+    height: 540px;
+    background-color: #282828;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #crd_button{
+    
+      box-sizing: border-box;  /* Includes padding and border in width and height calculation */
+      width: 50%;            /* Set width */
+      height: 50px;            /* Set height */
+      padding: 10px 15px;      /* Add padding inside the button */
+      font-size: 16px;         /* Adjust text size */
+    }
+
+    
+   
+    
+    @import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+
+    footer h1{
+      display: table;
+      margin: 5% auto 0;
+      text-transform: uppercase;
+      font-family: 'Anaheim', sans-serif;
+      font-size: 4em;
+      font-weight: 400;
+      text-shadow: 0 1px white, 0 2px black;
+    }
+    .contain{
+      margin: 4% auto;
+      width: 210px;
+      height: 140px;
+      position: relative;
+      perspective: 1000px;
+    }
+    #carousel{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: rotation 20s infinite linear;
+    }
+    #carousel:hover{
+      animation-play-state: paused;
+    }
+    #carousel figure{
+      display: block;
+      position: absolute;
+      width: 186px;
+      height: 116px;
+      left: 10px;
+      top: 10px;
+      background: black;
+      /* overflow: hidden; */
+      object-fit: contain;
+      border: solid 5px black;
+    }
+    #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+    #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+    #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+    #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+    #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+    #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+    #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+    #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+    #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+    
+    figure img{
+      -webkit-filter: grayscale(1);
+      cursor: pointer;
+      transition: all .5s ease;
+      width: 186px 
+      ;
+      height: 116px;
+      /* object-fit: cover; */
+    }
+    figure img:hover{
+      -webkit-filter: grayscale(0);
+      transform: scale(1.2,1.2);
+    }
+    
+    @keyframes rotation{
+      from{
+        transform: rotateY(0deg);
+      }
+      to{
+        transform: rotateY(360deg);
+      }
+    }
+    .button-container {
+      position: relative;
+    }
+    
+    .btn {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 40px;
+      background-color:#70656B;  /* Light blue */
+      color: white;
+      border: none;
+      border-radius: 50px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      outline: none;
+    }
+
+    
+    
+    /* Add a slight hover effect */
+    .btn:hover {
+      background-color: #70656B;
+      transform: scale(1.05);
+    }
+    
+    /* Animation to create the "bite" effect */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 0.5s ease;
+    }
+    
+    .btn:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .btn:active {
+      transform: scale(0.95);
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #footer{
+       width: 100%;
+       background-color: #70656B; 
+       padding-left:50px ;
+       margin-bottom:-100px ;
+      
+    }
+    #footer:first-child img{
+      width: 20%;
+      object-fit: contain;
+      
+    }
+
+    #footer a{
+      display: block;
+      padding-top: 10px;
+      color:#fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #footer h2{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-top: 4px;
+
+
+    }
+
+
+    #footer{
+      min-height: 70vh;
+    }
+    #footer section{
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      align-items: center;
+       margin-left: 500px;
+      margin-top: -200px;
+      gap: 4px; 
+
+    }
+
+   
+
+    .store_btn{
+      width: 150px;
+      height: 60px;
+      border: none;
+      background-color: #282828;
+      color: #fff;
+    }
+
+
+    .f12 h2{
+      color: #000;
+    }
+
+
+    
+CSS for Styling the Icons:
+css
+Copy code
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media-icons a {
+  color: white;
+  font-size: 2rem; /* Adjust size */
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding-left: 100px;
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
