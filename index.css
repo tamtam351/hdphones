@@ -343,7 +343,7 @@
        width: 100%;
        background-color: #70656B; 
        padding-left:50px ;
-       margin-bottom:-100px ;
+       
       
     }
     #footer:first-child img{
@@ -402,11 +402,7 @@ CSS for Styling the Icons:
 css
 Copy code
 /* Footer styles */
-footer {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-}
+
 
 .social-media-icons {
   display: flex;
