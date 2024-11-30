@@ -376,7 +376,7 @@
       grid-template-columns: 20% 20% 20% 20%;
       align-items: center;
        margin-left: 500px;
-      margin-top: -200px;
+      
       gap: 4px; 
 
     }
@@ -398,27 +398,5 @@
 
 
     
-CSS for Styling the Icons:
-css
-Copy code
-/* Footer styles */
 
-
-.social-media-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-media-icons a {
-  color: white;
-  font-size: 2rem; /* Adjust size */
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  padding-left: 100px;
-}
-
-.social-media-icons a:hover {
-  transform: scale(1.2); /* Slightly enlarge icon on hover */
-}
 
